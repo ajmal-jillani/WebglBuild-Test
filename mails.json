@@ -25,7 +25,7 @@
       "hyperLink": "<b>https://www.xoxo.qq/ms-link-x</b>",
       "isPhishing": "1",
       "phishingType": "0",
-      "isNameWrong": "0",
+      "isNameWrong": "1",
       "isEmailWrong": "1",
       "isDetailsWrong": "1",
       "isLinkWrong": "1"
