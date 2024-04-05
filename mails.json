@@ -191,7 +191,7 @@
       "isPhishing": "1",
       "phishingType": "2",
       "isNameWrong": "0",
-      "isEmailWrong": "0",
+      "isEmailWrong": "1",
       "isDetailsWrong": "1",
       "isLinkWrong": "1"
     }
