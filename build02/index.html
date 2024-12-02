@@ -20,6 +20,24 @@
       </div>
       <div id="unity-warning"> </div>
     </div>
+    
+    <!-- Add your beforeunload and unload event handlers here -->
+    <script>
+      window.onbeforeunload = function(e) {
+    
+    // These are the messages you're seeing in the gif
+    console.log("Calling OnClose from Browser!");
+    gameInstance.SendMessage("OnCloseObject", "OnClose");
+
+    // This never shows up correctly for me, but it does prompt
+    // the player to close their window with a dialogue box
+    //
+    var dialogText = "You game has been saved!  Would you like to continue unloading the page?";
+    e.returnValue = dialogText;
+    return dialogText;
+      };
+    </script>
+
     <script>
       window.addEventListener("load", function () {
         if ("serviceWorker" in navigator) {
@@ -58,11 +76,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/build02.loader.js";
+      var loaderUrl = buildUrl + "/final one.loader.js";
       var config = {
-        dataUrl: buildUrl + "/build02.data",
-        frameworkUrl: buildUrl + "/build02.framework.js",
-        codeUrl: buildUrl + "/build02.wasm",
+        dataUrl: buildUrl + "/final one.data",
+        frameworkUrl: buildUrl + "/final one.framework.js",
+        codeUrl: buildUrl + "/final one.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "VRProject",

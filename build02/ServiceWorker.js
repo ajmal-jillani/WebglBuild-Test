@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-VRProject-0.1";
 const contentToCache = [
-    "Build/build02.loader.js",
-    "Build/build02.framework.js",
-    "Build/build02.data",
-    "Build/build02.wasm",
+    "Build/final one.loader.js",
+    "Build/final one.framework.js",
+    "Build/final one.data",
+    "Build/final one.wasm",
     "TemplateData/style.css"
 
 ];
